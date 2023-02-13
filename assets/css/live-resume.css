@@ -5213,7 +5213,6 @@ input[type="button"].btn-block {
 .card-title {
   margin-bottom: 0.75rem;
 }
-
 .card-subtitle {
   margin-top: -0.375rem;
   margin-bottom: 0;
@@ -11086,7 +11085,6 @@ aside .widget .widget-title {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
 aside .widget .widget-content {
   font-size: 13px;
 }
@@ -11094,7 +11092,6 @@ aside .widget .widget-content {
 aside .widget .widget-content p {
   margin-bottom: 5px;
 }
-
 aside .widget .widget-content p:last-of-type {
   margin-bottom: 10px;
 }
@@ -11104,9 +11101,21 @@ aside .widget.card {
   border-radius: 10px;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
 }
-
+.Left{
+  text-align: right !important;
+  direction: rtl;
+}
+.widget-p p{
+  text-align: right !important;
+  direction: rtl;
+  border-bottom: 1px #eeeeee solid;
+}
 aside .widget.card .widget-title {
   color: #0067f6;
+}
+aside .widget.card .widget-h4{
+  color: #0067f6;
+  font-size: 14px;
 }
 
 .btn-share {
@@ -11518,12 +11527,9 @@ main .service-card {
   height: 90px;
   padding-top: 11px;
   padding-bottom: 11px;
-}
-
-main .service-card:first-child,
-main .service-card:nth-child(3) {
   border-right: 1px solid #f3f3f3;
 }
+
 
 @media (max-width: 991px) {
 
