@@ -32,9 +32,14 @@
 }
 
 @font-face {
-  font-family: Mikhak;
-  src: url("/assets/Font/Mikhak.ttf");
+  font-family: BFarnaz;
+  src: url('../Font/BFarnaz.eot') format('eot'),
+    /* IE6–8 */
+    url('../Font/BFarnaz.eot.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../Font/BFarnaz.eot.ttf') format('truetype');
 }
+
 *,
 *::before,
 *::after {
@@ -2764,7 +2769,7 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #0057d0;
+  background-color: #004099;
   border-color: #0052c3;
 }
 
@@ -5213,6 +5218,7 @@ input[type="button"].btn-block {
 .card-title {
   margin-bottom: 0.75rem;
 }
+
 .card-subtitle {
   margin-top: -0.375rem;
   margin-bottom: 0;
@@ -10921,6 +10927,7 @@ button.bg-white:focus {
 
 .text-center {
   text-align: center !important;
+  margin: 5px;
 }
 
 @media (min-width: 576px) {
@@ -11016,14 +11023,14 @@ aside .profile-img-wrapper {
 }
 
 aside .profile-img-wrapper img {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  box-shadow: 1px 0px 8px .5px  black;
 }
 
 aside .profile-name {
-  font-family: Mikhak;
-
+  font-family: BFarnaz;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -11032,9 +11039,8 @@ aside .profile-name {
 
 aside .profile-designation {
   padding: 5px 25px;
-  font-family: Mikhak;
-
-  font-size: 12px;
+  font-family: BFarnaz;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -11047,12 +11053,12 @@ aside .social-links {
 
 aside .social-links .social-link {
   display: inline-block;
-  font-size: 12px;
-  line-height: 1;
+  font-size: 15px;
+  line-height:.5;
   color: #0067f6;
   text-align: center;
   background-color: #ffffff;
-  padding: 8px;
+  padding: 7px;
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -11073,25 +11079,26 @@ aside .social-links .social-link:last-child {
 }
 
 aside .widget {
-  font-family: Mikhak;
-
+  font-family: BFarnaz;
   text-align: center;
   margin-bottom: 28px;
 }
 
 aside .widget .widget-title {
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 aside .widget .widget-content {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 aside .widget .widget-content p {
   margin-bottom: 5px;
 }
+
 aside .widget .widget-content p:last-of-type {
   margin-bottom: 10px;
 }
@@ -11101,19 +11108,23 @@ aside .widget.card {
   border-radius: 10px;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
 }
-.Left{
+
+.Left {
   text-align: right !important;
   direction: rtl;
 }
-.widget-p p{
+
+.widget-p p {
   text-align: right !important;
   direction: rtl;
   border-bottom: 1px #eeeeee solid;
 }
+
 aside .widget.card .widget-title {
   color: #0067f6;
 }
-aside .widget.card .widget-h4{
+
+aside .widget.card .widget-h4 {
   color: #0067f6;
   font-size: 14px;
 }
@@ -11330,8 +11341,7 @@ aside {
 }
 
 main {
-  font-family: Mikhak;
-
+  font-family: BFarnaz;
   flex-grow: 1;
 }
 
@@ -11426,7 +11436,7 @@ main p {
 .intro-section p {
   text-align: right;
   direction: rtl;
-  font-size: 16px;
+  font-size: 16.5px;
 }
 
 main .intro-section {
@@ -11488,7 +11498,6 @@ main .time-line-item:not(:first-child)::after {
 }
 
 main .time-line-item .badge {
-
   padding: 6px 10px;
   font-size: 8px;
   font-weight: 500;
@@ -11498,25 +11507,27 @@ main .time-line-item .badge {
 }
 
 main .time-line-item-title {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 2px;
 }
 
 main .time-line-item-subtitle {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.6;
-  color: #656565;
+  color: #333333;
   margin-bottom: 3px;
 }
 
 main .time-line-item-content {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 0;
+  /* font-weight: 500; */
+  color: black;
 }
 
 main .services-section {
@@ -11529,7 +11540,6 @@ main .service-card {
   padding-bottom: 11px;
   border-right: 1px solid #f3f3f3;
 }
-
 
 @media (max-width: 991px) {
 
@@ -11568,7 +11578,7 @@ main .service-card .service-title {
 }
 
 main .service-card .service-title h5 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 8px;
